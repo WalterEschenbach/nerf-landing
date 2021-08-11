@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image'
 
 function Homepage() {
     return (
@@ -14,7 +15,7 @@ function Homepage() {
             </div>
             <div className={styles.homepageRight}>
 
-                <img src="/NERF-LOGO5.png" alt="" className={styles.circleBrand} />
+                <Image src="/NERF-LOGO5.png" alt="" className={styles.circleBrand} />
             </div>
         </div>
     )

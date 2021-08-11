@@ -21,7 +21,7 @@ function Footer() {
             <div className={styles.footerLinks}>
                 {footerLinks.map(link => {
                     return (
-                        <React.Fragment>
+                        <React.Fragment key={link}>
                             <FooterLink text={link} />
                             <span>|</span>
                         </React.Fragment>
