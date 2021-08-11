@@ -26,8 +26,11 @@ grey - #838377
 
 
 .brand {
-  border: 1px solid blue;
+  height: 80%;
+  width: 80%;
+  transform: translatey(10%);
 }
+
 .socials{
   position: fixed;
   width: 100%;
@@ -59,17 +62,61 @@ grey - #838377
 }
 .navlink{
   text-align: center;
+  align-items: center;
+  justify-content: center;
   width: 14rem;
 }
-.navlink h1{
+.navlink h3{
+  font-family: aktiv-grotesk-extended,sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translatey(50%);
   color: white;
 }
-.homepage {
+.homepageContainer {
   position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
   top: 8rem;
   width: 100%;
   height: calc(100vh - 8rem);
   background-color: #838377;
+}
+.homepageLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+}
+.homepageRight{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black
+}
+.circleBrand{
+  height: 46em;
+}
+.homepageText{
+  font-family: "aktiv-grotesk-extended",sans-serif;
+  color: white;
+}
+.homepageText h1{
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 800!important;
+  text-transform: uppercase;
+}
+.homepageText p{
+  font-size: 16px;
 }
 
 .footer {
