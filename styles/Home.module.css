@@ -24,9 +24,6 @@ grey - #838377
 }
 
 .brand {
-  height: 80%;
-  width: 80%;
-  transform: translatey(10%);
 }
 
 .socials{
@@ -40,7 +37,6 @@ grey - #838377
   margin: 0 10px;
   background-color: #0534B8;
   z-index: 300;
-  border: 1px solid blue;
 }
 .icons{
   margin: 0 10px;
