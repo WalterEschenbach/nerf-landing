@@ -23,9 +23,6 @@ grey - #838377
   width: 100%;
 }
 
-.brand {
-}
-
 .socials{
   position: fixed;
   width: 100%;
@@ -45,7 +42,12 @@ grey - #838377
 }
 .icons{
   margin: 0 10px;
+  color: white;
 }
+.socials a:hover .icons{
+  color: #838377;
+}
+
 
 
 .nav {
@@ -62,14 +64,17 @@ grey - #838377
 }
 .navlink{
   text-align: center;
-  /* align-items: center;
-  justify-content: center; */
   width: 14rem;
   height: 100%;
 }
 .navlink:hover{
-  background-color: #FA4616;
+  animation-name: fadeIn;
+  animation-duration: 1s;
   cursor: pointer;
+}
+@keyframes fadeIn{
+  from {background-color: #FA6B02;}
+  to {background-color: #FA4616;}
 }
 .navlink h3{
   font-family: aktiv-grotesk-extended,sans-serif;
@@ -151,6 +156,10 @@ grey - #838377
   justify-content: center;
   align-items: center;
   margin: 0 10px;
+}
+.footerLink:hover h3{
+  color: #838377;
+  text-decoration: underline;
 }
 .footerLink h3{
   font-family: "aktiv-grotesk-extended",sans-serif;
