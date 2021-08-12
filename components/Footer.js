@@ -7,14 +7,14 @@ import FooterLink from '../components/FooterLink'
 
 function Footer() {
     const footerLinks = [
-        'PRIVACY POLICY',
-        'TERMS OF USE',
-        'ACCESSIBILITY',
-        'CONTACT US',
-        'CAREERS',
-        'LET\'S PLAY',
-        'CORPORATE INFORMATION',
-        'FAQ'
+        { title: 'PRIVACY POLICY', link: "https://docs.hasbro.com/en-us/legal/privacy" },
+        { title: 'TERMS OF USE', link: "https://docs.hasbro.com/en-us/legal/terms" },
+        { title: 'ACCESSIBILITY', link: "https://corporate.hasbro.com/en-us/sitemap" },
+        { title: 'CONTACT US', link: "https://corporate.hasbro.com/en-us/contact-us" },
+        { title: 'CAREERS', link: "https://jobs.hasbro.com/?locale=en_US" },
+        { title: 'LET\'S PLAY', link: "https://nerf.hasbro.com/en-us/games" },
+        { title: 'CORPORATE INFORMATION', link: "https://corporate.hasbro.com/en-us" },
+        { title: 'FAQ', link: "https://consumercare.hasbro.com/en-us" }
     ]
     return (
         <footer className={styles.footer}>
@@ -22,7 +22,7 @@ function Footer() {
                 {footerLinks.map(link => {
                     return (
                         <React.Fragment key={link}>
-                            <FooterLink text={link} />
+                            <FooterLink text={link.title} link={link.link} />
                             <span>|</span>
                         </React.Fragment>
                     )

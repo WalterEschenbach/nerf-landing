@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 function FooterLink(props) {
     return (
         <div className={styles.footerLink}>
-            <a href="#">
+            <a href={props.link}>
                 <h3>
                     {props.text}
                 </h3>
