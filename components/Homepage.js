@@ -15,7 +15,14 @@ function Homepage() {
             </div>
             <div className={styles.homepageRight}>
 
-                <Image src="/NERF-LOGO5.png" alt="" className={styles.circleBrand} />
+                <Image
+                    src="/NERF-LOGO5.png"
+                    alt=""
+                    //className={styles.circleBrand}
+                    width={500}
+                    height={500}
+                //layout="responsive" 
+                />
             </div>
         </div>
     )
