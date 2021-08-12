@@ -73,7 +73,6 @@ grey - #838377
   position: absolute;
   display: flex;
   flex-direction: row;
-  flex-basis: auto;
   top: 8rem;
   width: 100%;
   height: calc(100vh - 8rem);
@@ -152,8 +151,14 @@ grey - #838377
 
 
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.homepageContainer{
+  display: flex;
+  flex-direction: column;
+}
+.homepageLeft{
+  width: 100%;
+}
+.homepageRight{
+  width: 100%;
+}
 }

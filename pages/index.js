@@ -13,6 +13,7 @@ export default function Home() {
         <title>Nerf Perks are Here | Nerf</title>
         <meta name="description" content="Nerf Perks in the style of Dr. Pepper Perks" />
         <link rel="icon" href="/NERF-LOGO.png" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"></meta>
       </Head>
 
       <main className={styles.main}>
