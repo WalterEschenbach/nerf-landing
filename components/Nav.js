@@ -7,14 +7,13 @@ function Nav() {
         <nav className={styles.nav}>
             <div className={styles.navlink}><h3>PRODUCTS</h3></div>
             <div className={styles.navlink}><h3>MERCH</h3></div>
-            <div className={styles.navlink}>
+            <div style={{ display: "block", position: "relative", width: "14rem", margin: "5px" }}>
                 <Image
                     src="/NERF-LOGO2.png"
                     alt=""
+                    layout="fill"
+                    objectFit="contain"
                     className={styles.brand}
-                    width={130}
-                    height={60}
-                //layout="responsive" 
                 />
             </div>
             <div className={styles.navlink}><h3>REWARDS</h3></div>
