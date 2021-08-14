@@ -23,9 +23,6 @@ grey - #838377
   width: 100%;
 }
 
-.brand {
-}
-
 .socials{
   position: fixed;
   width: 100%;
@@ -38,9 +35,20 @@ grey - #838377
   background-color: #0534B8;
   z-index: 300;
 }
+.socials a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .icons{
   margin: 0 10px;
+  color: white;
 }
+.socials a:hover .icons{
+  color: #838377;
+}
+
+
 
 .nav {
   position: fixed;
@@ -56,9 +64,17 @@ grey - #838377
 }
 .navlink{
   text-align: center;
-  align-items: center;
-  justify-content: center;
   width: 14rem;
+  height: 100%;
+}
+.navlink:hover{
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  cursor: pointer;
+}
+@keyframes fadeIn{
+  from {background-color: #FA6B02;}
+  to {background-color: #FA4616;}
 }
 .navlink h3{
   font-family: aktiv-grotesk-extended,sans-serif;
@@ -69,14 +85,19 @@ grey - #838377
   transform: translatey(50%);
   color: white;
 }
-.homepageContainer {
+.homepage{
   position: absolute;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   top: 8rem;
   width: 100%;
   height: calc(100vh - 8rem);
   background-color: #838377;
+}
+.homepageContainer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
 }
 .homepageLeft{
   display: flex;
@@ -85,7 +106,6 @@ grey - #838377
   align-items: center;
   width: 50%;
   height: 100%;
-  border: 1px solid black;
 }
 .homepageRight{
   width: 50%;
@@ -93,7 +113,6 @@ grey - #838377
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black
 }
 .circleBrand{
   height: 46em;
@@ -101,10 +120,11 @@ grey - #838377
 .homepageText{
   font-family: "aktiv-grotesk-extended",sans-serif;
   color: white;
+  display: block;
 }
 .homepageText h1{
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 50px;
+  line-height: 50px;
   font-weight: 800!important;
   text-transform: uppercase;
 }
@@ -117,7 +137,7 @@ grey - #838377
   top: 100vh;
   width: 100%;
   height: 21rem;
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: center;
   background-color: #0534B8;
@@ -126,6 +146,8 @@ grey - #838377
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2em;
 }
 .footerLink{
   display: flex;
@@ -134,6 +156,10 @@ grey - #838377
   justify-content: center;
   align-items: center;
   margin: 0 10px;
+}
+.footerLink:hover h3{
+  color: #838377;
+  text-decoration: underline;
 }
 .footerLink h3{
   font-family: "aktiv-grotesk-extended",sans-serif;
