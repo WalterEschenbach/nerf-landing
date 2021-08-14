@@ -20,16 +20,23 @@ function Footer() {
         <footer className={styles.footer}>
             <div className={styles.footerLinks}>
                 {footerLinks.map(link => {
+                    if (link.title == footerLinks[footerLinks.length - 1].title) {
+                        return (
+                            <React.Fragment key={link}>
+                                <FooterLink text={link.title} link={link.link} />
+                            </React.Fragment>
+                        )
+                    }
                     return (
                         <React.Fragment key={link}>
                             <FooterLink text={link.title} link={link.link} />
-                            <span>|</span>
+                            <span style={{ fontWeight: "800" }}>|</span>
                         </React.Fragment>
                     )
                 })}
             </div>
             <p>NERF is a registered trademark of Nerf/Hasbro, Inc.</p>
-            <br />
+
             <p>©2021 Nerf/Hasbro, Inc.</p>
         </footer>
     )
