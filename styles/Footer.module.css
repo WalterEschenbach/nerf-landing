@@ -1,0 +1,47 @@
+.footer {
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    height: 21rem;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0534B8;
+  }
+  .footerLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+  }
+  .footerLink{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .footerLink:hover h3{
+    color: #838377;
+    text-decoration: underline;
+  }
+  .footerLink h3{
+    font-family: "aktiv-grotesk-extended",sans-serif;
+    font-weight: 800 ;
+    color: white;
+  }
+  .footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "aktiv-grotesk-extended",sans-serif;
+    font-weight: 800 ;
+    color: #838377;
+  }
+
+  
+@media (max-width: 600px) {
+
+  }

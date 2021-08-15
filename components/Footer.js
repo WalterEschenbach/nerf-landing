@@ -1,11 +1,10 @@
 import React from 'react'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Footer.module.css'
 
 import FooterLink from '../components/FooterLink'
 
-
-
 function Footer() {
+
     const footerLinks = [
         { title: 'PRIVACY POLICY', link: "https://docs.hasbro.com/en-us/legal/privacy" },
         { title: 'TERMS OF USE', link: "https://docs.hasbro.com/en-us/legal/terms" },
@@ -16,19 +15,20 @@ function Footer() {
         { title: 'CORPORATE INFORMATION', link: "https://corporate.hasbro.com/en-us" },
         { title: 'FAQ', link: "https://consumercare.hasbro.com/en-us" }
     ]
+
     return (
         <footer className={styles.footer}>
             <div className={styles.footerLinks}>
                 {footerLinks.map(link => {
                     if (link.title == footerLinks[footerLinks.length - 1].title) {
                         return (
-                            <React.Fragment key={link}>
+                            <React.Fragment key={link.title}>
                                 <FooterLink text={link.title} link={link.link} />
                             </React.Fragment>
                         )
                     }
                     return (
-                        <React.Fragment key={link}>
+                        <React.Fragment key={link.title}>
                             <FooterLink text={link.title} link={link.link} />
                             <span style={{ fontWeight: "800" }}>|</span>
                         </React.Fragment>

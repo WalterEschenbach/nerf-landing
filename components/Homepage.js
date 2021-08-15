@@ -22,6 +22,8 @@ function Homepage() {
                         //className={styles.circleBrand}
                         width={500}
                         height={500}
+                        placeholder="blur"
+                        blurDataURL
                     //layout="responsive" 
                     />
                 </div>
