@@ -79,7 +79,7 @@ grey - #838377
 @media (max-width: 600px) {
   .homepage{
     top: 60px;
-  height: calc(100vh-60px);
+  height: calc(100vh - 60px);
 
   }
   .homepageContainer{

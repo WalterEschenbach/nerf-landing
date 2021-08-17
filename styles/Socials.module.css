@@ -6,7 +6,6 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 10px;
     background-color: #0534B8;
     z-index: 300;
   }
@@ -27,6 +26,7 @@
     .socials{
         position: absolute;
         bottom: 0;
+        left: 0;
         justify-content: center;
         height: 8.5rem;
     }
