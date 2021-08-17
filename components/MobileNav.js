@@ -9,13 +9,16 @@ function MobileNav() {
     return (
         <nav className={styles.mobileNav}>
             <Hamburger />
-            <Image
-                src="/NERF-LOGO2.png"
-                alt=""
-                layout="fill"
-                objectFit="contain"
-                className={styles.brand}
-            />
+            <div className={styles.navLogo}>
+                <Image
+                    src="/NERF-LOGO2.png"
+                    alt=""
+                    layout="fill"
+                    objectFit="contain"
+                    className={styles.brand}
+                />
+            </div>
+
         </nav>
     )
 }

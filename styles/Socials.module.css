@@ -22,3 +22,15 @@
   .socials a:hover .icons{
     color: #838377;
   }
+
+  @media (max-width: 600px) {
+    .socials{
+        position: absolute;
+        bottom: 0;
+        justify-content: center;
+        height: 8.5rem;
+    }
+    .icons{
+      margin: 0 15px;
+    }
+}

@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
@@ -8,7 +9,6 @@ import Nav from '../components/Nav'
 import Homepage from '../components/Homepage'
 import Footer from '../components/Footer'
 import MobileNav from '../components/MobileNav'
-import React, { useEffect, useRef, useState } from 'react'
 
 
 
@@ -38,13 +38,15 @@ export default function Home() {
         </React.Fragment>
       )}
       {windowWidth < 600 && (
-        <main>
-          <MobileNav />
-          <Homepage />
-          <Socials />
-        </main>
+        <React.Fragment>
+          <main className={styles.main}>
+            <MobileNav />
+            <Homepage />
+            <Socials />
+          </main>
+          <Footer />
+        </React.Fragment>
       )}
-
     </div>
   )
 }

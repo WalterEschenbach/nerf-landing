@@ -35,7 +35,7 @@ grey - #838377
 .homepageContainer {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 92%;
 }
 .homepageLeft{
   display: flex;
@@ -52,8 +52,11 @@ grey - #838377
   justify-content: center;
   align-items: center;
 }
-.circleBrand{
-  height: 46em;
+.circleBrandContainer{
+  display: block;
+  position: relative;
+  height: 40rem;
+  width: 40rem;
 }
 .homepageText{
   font-family: "aktiv-grotesk-extended",sans-serif;
@@ -74,14 +77,42 @@ grey - #838377
 
 
 @media (max-width: 600px) {
-.homepageContainer{
-  display: flex;
-  flex-direction: column;
-}
-.homepageLeft{
-  width: 100%;
-}
-.homepageRight{
-  width: 100%;
-}
+  .homepage{
+    top: 60px;
+  height: calc(100vh-60px);
+
+  }
+  .homepageContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .homepageLeft{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .homepageRight{
+    width: 100%;
+    justify-content: flex-start;
+    height: fit-content;
+    margin-bottom: 10px;
+  }
+  .circleBrandContainer{
+    height: 55vw;
+    width: 55%;
+    margin-top: 20px;
+  }
+  .homepageText{
+    width: 100%;
+  }
+  .homepageText h1{
+    font-size: 28px;
+    line-height: 28px;
+    
+  }
+  .homepageText p{
+    font-size: 14px;
+    line-height: 14px;
+    margin: 5px 0;
+  }
+
 }
