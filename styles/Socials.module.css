@@ -7,7 +7,6 @@
     justify-content: flex-start;
     align-items: center;
     background-color: #0534B8;
-    z-index: 300;
   }
   .socials a{
     display: flex;
@@ -24,11 +23,11 @@
 
   @media (max-width: 600px) {
     .socials{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        justify-content: center;
-        height: 8.5rem;
+      position: relative;
+      top: 60px;
+      justify-content: center;
+      height: 8.5rem;
+      z-index: 9999;
     }
     .icons{
       margin: 0 15px;

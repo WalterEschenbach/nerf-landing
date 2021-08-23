@@ -44,6 +44,7 @@ grey - #838377
   align-items: center;
   width: 50%;
   height: 100%;
+  border: 1px solid red
 }
 .homepageRight{
   width: 50%;
@@ -73,13 +74,14 @@ grey - #838377
   font-size: 16px;
 }
 
-
-
-
 @media (max-width: 600px) {
+  .main{
+    position: absolute;
+  }
   .homepage{
-    top: 60px;
-  height: calc(100vh - 60px);
+    position: relative;
+    top: 8rem;
+    height: calc(100vh - 60px);
 
   }
   .homepageContainer{
@@ -99,7 +101,7 @@ grey - #838377
   .circleBrandContainer{
     height: 55vw;
     width: 55%;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .homepageText{
     width: 100%;

@@ -43,8 +43,8 @@ export default function Home() {
             <MobileNav />
             <Homepage />
             <Socials />
+            <Footer />
           </main>
-          <Footer />
         </React.Fragment>
       )}
     </div>
